@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+header nav ul li a:hover {
+    background:#2980b9;
+}
+
+#container {
+    position: sticky;
+    position: -webkit-sticky; /*prefijos de los navegadores*/
+    top: 0px;                   /*para que cuando llegue el scroll a 0, se lo lleve */
+    z-index:100;
+}
+
+
+.nav-bar {
+    color: white;
+    
+          
+}
+
+#logo {
+    width: 50px;
+    display: inline;
+    float: right;
+    padding-right: 60px;
+    padding-top: 15px;
+}
+
+#logo2 {
+       display:block; /*centrar img de la palabra blog */
+        margin:auto;
+
+}
+
+.contenedor:hover img {-webkit-transform:scale(1.5);transform:scale(1.5);} /*para agrandar img */
+.contenedor {overflow:hidden;}
+
+.nav-bar li{
+    height: 100%;
+    display: inline-block;
+    margin: auto, auto;
+    padding-left: 40px;
+    padding-right: 8em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: larger;
+    margin: 5px;
+}
+.contenido p {
+
+    display: block;
+    max-width: 1320px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin:auto;
+    width: calc(100% - 40px);
+    box-sizing: content-box;
+    position: relative;
+    flex-direction: column;
+}
+
+/**********************************************************************/ /*imagen del logo abriendose */
+
+svg{
+  background:url('logo.png');
+  background-size:cover;
+  width:40vmin; height:auto;
+  display:block;
+  margin:auto;
+
+}
+text{
+  font-size:10px;
+  transition:font-size .4s ease-out;
+  font-weight:900;
+  font-family:arial;
+}
+svg:hover text{
+  transition:font-size .4s ease-in;
+  font-size: 300px;
+}
+#fondo {
+    background: url('fondoplano.jpg');
+    height: 1600px;
+    }
+
+    /**********************************************************************/
+  
