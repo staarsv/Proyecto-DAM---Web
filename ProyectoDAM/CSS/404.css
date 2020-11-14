@@ -50,7 +50,7 @@ color: white;
     display: inline-block;
     margin: auto, auto;
     padding-left: 30px;
-    padding-right: 10em;
+    padding-right: 7em;
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: larger;
@@ -293,7 +293,7 @@ footer {
 
     #perrito img{
     padding-top: 70px;
-    padding-left: 34%;
+    padding-left: 30%;
     width: 600px;
     display: block;
     float:center;
