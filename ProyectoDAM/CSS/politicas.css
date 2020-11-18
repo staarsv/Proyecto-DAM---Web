@@ -90,54 +90,7 @@ a {
     }
 
 
-    .menu li {
-    height: 100%;
-    display: inline-block;
-    margin: auto, auto;
-    padding-left: 60px;
-    padding-right: 7em;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: larger;
-    margin: 5px;
-    }
-
-    ul #carrusel {
-        padding: 0;
-        margin: 0;
-        list-style: none inside;
-    }
-
-    li #slide1 {
-     text-align: center;
-    }
-
-    ul.slider {
-        position:relative; /*Necesitamos que el ul sea relativo*/
-        
-    }
-    ul.slider li {
-        opacity: 0; /*Ocultamos todos los <li>*/
-        transition: opacity .5s;
-        position: absolute; /*Posicionamos en absoluto los <li>*/
-        left: 0px;
-        top: 0px;
-      
-
-        
-    }
-    ul.slider li:first-child {
-        opacity: 1; /*Mostramos el primer <li>*/
-    }
-    ul.slider li:target {
-        opacity: 1; /*Mostramos el <li> al que apunta el enlace*/
-    }
-    nav.navCarrusel {
-        position:relative;
-        top:750px;
-        left:275px;
-    }
-
+    
 /********************************************PREGUNTAS Y RESPUESTAS****************************************************************/
 
    p{
@@ -172,28 +125,6 @@ div#body{
 }
 
 
-div.subapartado {                               /*Para cada faq necesitaremos un contenedor, en el estara solo una pregunta y una respuesta*/ 
-    width: 600px;
-    min-height:100px;
-
-    
-    
-
-}
-
-
-div.titulo{                                     /* Esta es la cajita que contendra el titulo de la pregunta*/
-    width: 600px;
-    height: 50px;
-
-    overflow: hidden;
-    cursor: pointer;
-    border-bottom: solid 1px white ;
-    display: grid;
-    grid-template-columns: 90% 50%;
-    grid-gap: 0px;
-   
-}
 
 p.titulo{                                       /*el parrafo de la pregunta */
    
@@ -202,64 +133,7 @@ p.titulo{                                       /*el parrafo de la pregunta */
    padding-top: 3%;
     
 }
-/*************************IMAGEN CON ANIMACION**************************/
-img.flecha {
-   padding-top: 3%;
-   transition: all 2s;
-      -webkit-transition: all 0.5s;   
-      }
 
-
-.flecha:hover { transform:rotate(360deg) scale(0.4,0.4);
-        
-        -o-transform:rotate(360deg) scale(0.4,0.4);     
-        }
-
-
-/*************************CAJA DESPLEGABLE**************************/
-
-div.info{                                       /*Esta es la cajita de la respuesta */
-    width: 600px;
-    height: 0px;
-    background-color: lightgrey;
-    overflow: hidden;                           /* le pongo hidden para que se oculte, y luego llamarlo con el hover*/
-    -webkit-transition: height 0.5s;     
-    border-radius: 15px;          
-     /* una propiedad que encontré investigando para ponerle una animación pequeña*/
-    
-
-}
-
-
-p.info {                                        /*el parrafo de la respuesta*/
-    margin: 50px;
-    margin-bottom: 10px;
-    text-align: center;
-    color:#311758;
-    
-}
-
-.info2{
-    margin-bottom: 20px;
-    text-align: center;
-
-}
-/*************************ANIMACION CON HOVER**************************/
-div.subapartado:hover div.info{                 /*Al pasar el ratón (por eso un hover) por el div de subapartado haga X cosa con el div de info*/
-
-    height: 180px;
-}
-
-
-
-
-
-/*************************/
-
-
-.desplegable {
-background-color: blueviolet;
-}
 
 /********************************************FOOTER****************************************************************/
 
@@ -268,15 +142,15 @@ background-color: blueviolet;
     padding: 50px;
     padding-top: 98px;
     width: 20%;
-    display: block;
+    display: block;                     /*Es un bloque para que pueda ponerse a la izq abajo*/
    }
 
 .parrafopie {
 font-family: "Roboto", sans-serif;
  color: white;
- padding-top: 300PX;
+ padding-top: 300px;
  padding-right: 38px;
- float: right;
+ float: right;                          /*Va a flotar a la derecha*/
  display: block;
 }
 
@@ -288,7 +162,7 @@ font-family: "Roboto", sans-serif;
 }
 
 #logo2{
-    width: 50px;
+    width: 50px;                        /*El logo flotara a la izquierda*/
     display: block;
     float:left;
     padding-left: 50px;
