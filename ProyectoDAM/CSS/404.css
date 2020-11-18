@@ -69,6 +69,20 @@ a {
     background-color: #401467;
     
  }
+/******************************* inicio de sesion **********************************/
+.lista a {
+  
+  padding-left: 12%;
+    padding-right: 12%;
+
+}
+.lista  strong {
+  
+  text-decoration: underline;
+  font-size: 18px;
+
+}
+
     /**********************************************************************/
 
     #titulo {
